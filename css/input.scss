@@ -1,0 +1,86 @@
+// @import '_responsive';
+
+
+.section1{
+    background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd.jpg?v=1625127338);
+    width: 100%;
+    height: 100vh;
+    // background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    .text-g{
+        text-align: center;
+        padding-top: 27vh;
+        .parag-g{
+            display: inline-block;
+            margin: auto;
+            .parag-2-g{
+                float: left;
+                margin: 0 5px;
+                span{
+                    background-color: #F03333;
+                    color: white;
+                    border-radius: 50%;
+                    padding: 10px;
+                    font-weight: 600;
+                    text-align: center;
+                    &.span-1-g{
+                        background-color: #F03333;
+                        color: white;
+                        border-radius: 50%;
+                        padding: 10px 14px;
+                        font-weight: 600;
+                    }
+                }
+                p{
+                    margin-top: 10px;
+                    font-size: 12px;
+                    font-weight: 600;
+                }
+            }
+        }
+        .parag-1-g{
+            font-size: 39px;
+            font-weight: 600;
+            margin-bottom: 40px;
+            letter-spacing: 1px;
+        }
+        .parag-3-g{
+            font-size: 25px;
+            font-weight: 600;
+        }
+        .button-div-g{
+            border: none;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+            a{
+                background-color: white;
+                display: inline-block;
+                background-color: black;
+                color: white;
+                padding: 13px 30px 13px 30px ;
+                text-decoration: none;
+                font-weight: 600;
+                transition: 0.3s ease;
+                &:hover{
+                    background-color: #ED6436;
+                }
+            }
+            input{
+                padding: 13px 0px 13px 13px;
+                width: 35%;
+                border: none;
+                outline: none;
+            }
+        }
+        .parag-4-g{
+            color: grey;
+            font-size: 14px;
+            a{
+                color: rgb(29, 29, 29);
+            }
+        }
+    }
+}
+

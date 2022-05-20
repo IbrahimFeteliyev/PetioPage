@@ -1,0 +1,593 @@
+@import "_variable.scss";
+
+
+body{
+    overflow-x: hidden;
+
+    .containerr {
+        width: 92%;
+        margin: auto;
+    }
+    
+    #header {
+        border-bottom: 1px solid rgba(212, 212, 212, 0.527);
+        padding-bottom: 20px;
+    
+        .bar-i {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 0px 0 0px;
+            position: relative;
+            width: 100%;
+    
+            .bar-icon {
+                font-size: 25px;
+                color: $color1;
+                display: none;
+            }
+    
+            .header-left {
+                .img1 {
+                    display: none;
+                }
+    
+                .img2 {
+                    display: inline-block;
+                }
+    
+                .big-menu {
+                    margin-left: 60px;
+    
+                    ul {
+                        margin: 0;
+    
+                        li {
+                            margin: 0;
+                            margin-right: 40px;
+                            padding: 20px 0;
+    
+                            .home-a-i {
+                                text-decoration: none;
+                                color: $color5;
+                                font-size: 16px;
+                                font-weight: bold;
+                                transition: 0.3s ease-in;
+    
+                                &:hover {
+                                    color: $color2;
+                                }
+    
+                                i {
+                                    margin-left: 5px;
+                                    font-size: 13px;
+                                }
+                            }
+    
+                            &.home-i,
+                            &.blogs-i,
+                            &.pages-i {
+                                position: relative;
+    
+    
+                                .dropped-item {
+                                    z-index: 9999;
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 0%;
+                                    width: 200px;
+                                    opacity: 0;
+                                    padding: 20px;
+                                    visibility: hidden;
+                                    background-color: white;
+                                    font-family: 'Montserrat', sans-serif;
+                                    transition: 0.3s ease;
+    
+    
+                                    li {
+                                        padding: 5px 0;
+    
+                                        a {
+                                            text-decoration: none;
+                                            color: $color4;
+                                            font-size: 15px;
+                                            transition: 0.3s ease;
+    
+                                            &:hover {
+                                                color: $color2;
+    
+                                            }
+                                        }
+                                    }
+    
+    
+                                }
+    
+                                &:hover .dropped-item {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+                            }
+    
+                            &.collections-i {
+                                .dropdown-big-menu {
+                                    z-index: 9999;
+    
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    opacity: 0;
+                                    width: 97%;
+                                    visibility: hidden;
+                                    background-color: $color1;
+                                    transition: 0.3s ease;
+                                    padding: 40px 30px;
+    
+                                    .box-menu {
+                                        width: 20%;
+    
+                                        a {
+                                            img {
+                                                width: 100%;
+                                            }
+                                        }
+    
+                                        .box-menu-a {
+                                            color: $color4;
+                                            font-size: 16px;
+                                            text-decoration: none;
+                                            font-weight: bold;
+                                            margin-top: 15px;
+                                            display: inline-block;
+                                            transition: 0.2s ease;
+    
+                                            &:hover {
+                                                color: $color2;
+                                            }
+                                        }
+                                    }
+    
+    
+    
+                                }
+    
+                                &:hover .dropdown-big-menu {
+                                    opacity: 1;
+                                    visibility: visible;
+                                }
+    
+    
+                            }
+    
+                            &.shop-i {
+                                .dropdown-big-menu-1 {
+                                    z-index: 9999;
+                                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                                    position: absolute;
+                                    top: 100%;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    opacity: 0;
+                                    width: 97%;
+                                    visibility: hidden;
+                                    background-color: $color1;
+                                    transition: 0.3s ease;
+                                    padding: 25px 40px;
+    
+                                }
+    
+                                .box-menu-1 {
+                                    .box-menu-h3 {
+                                        a {
+                                            font-size: 18px;
+                                            text-decoration: none;
+                                            color: $color5;
+                                            position: relative;
+                                            transition: 0.2s ease;
+                                            padding: 6px 0;
+    
+                                            &:hover {
+                                                color: $color2;
+                                            }
+    
+                                            &::before {
+                                                position: absolute;
+                                                bottom: 3px;
+                                                width: 40px;
+                                                height: 1px;
+                                                background: $color2;
+                                                content: "";
+                                                left: 0;
+                                            }
+                                        }
+    
+                                    }
+    
+                                    ul {
+                                        margin: 0;
+    
+                                        li {
+                                            margin: 0;
+                                            padding: 5px 0;
+    
+                                            a {
+                                                text-decoration: none;
+                                                color: $color4;
+                                                font-size: 15px;
+                                                font-weight: 450;
+                                                transition: 0.2s ease;
+    
+                                                &:hover {
+                                                    color: $color2;
+                                                }
+                                            }
+    
+                                        }
+                                    }
+                                }
+    
+    
+    
+    
+    
+                                &:hover {
+                                    .dropdown-big-menu-1 {
+                                        opacity: 1;
+                                        visibility: visible;
+                                    }
+    
+                                }
+    
+                            }
+                        }
+                    }
+                }
+    
+    
+    
+            }
+    
+            .header-right {
+                .icons {
+                    position: relative;
+    
+                    span {
+                        position: absolute;
+                        top: 0%;
+                        color: white;
+                        right: 0%;
+                        width: 20px;
+                        font-size: 13px;
+                        height: 20px;
+                        border-radius: 50%;
+                        background-color: $color2;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+    
+                    }
+    
+                    a {
+                        margin: 12px;
+    
+                        i {
+                            color: $color5;
+                            transform: scale(1);
+                            transition: 0.2s ease-in-out;
+                            font-size: 18px;
+    
+                            &:hover {
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+    
+    
+    }
+    
+    // Header finish
+    // Section1 start
+    .section1-g {
+        background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/breadcumd.jpg?v=1625127338);
+        width: 100%;
+        height: 200px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        .text-g {
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+    
+            h1 {
+                font-size: 47px;
+                margin-bottom: 10px;
+            }
+        }
+    }
+    
+    // Section1 finish
+    // Section2 start
+    .section2-g {
+        margin: 0%;
+        padding: 0%;
+    
+        .boxes {
+            position: relative;
+            display: flex;
+            flex-wrap: wrap;
+    
+            .box {
+                position: absolute;
+                top: 20%;
+                left: 12%;
+                background-color: #F2F2F2;
+                color: black;
+                width: 400px;
+                padding: 30px;
+                border-radius: 10px;
+    
+                .text {
+                    h3 {
+                        padding-bottom: 30px;
+                    }
+    
+                    p {
+                        color: grey;
+                        line-height: 35px;
+                    }
+                }
+    
+                .box-1 {
+                    i {
+                        background-color: #ED6436;
+                        padding: 25px;
+                        border-radius: 50%;
+                        margin-bottom: 10px;
+                        color: white;
+                        font-size: 15px;
+                    }
+    
+                    span {
+                        font-weight: 600;
+                    }
+    
+                    p {
+                        color: grey;
+                    }
+                }
+    
+            }
+    
+        }
+    }
+    
+    // Section2 finish
+    // Section3 start
+    .section3-g {
+        background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/page-contact-bg.jpg?v=1631786229);
+        padding: 25px 0px;
+        background-position: right center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 550px;
+        margin-bottom: 100px;
+    
+        .boxes {
+            display: flex;
+            flex-wrap: wrap;
+    
+            .input-box {
+                width: 80%;
+                input {
+                    width: 100%;
+                    padding: 7px 0 7px 0;
+                    border: none;
+                    border-radius: 2px;
+                    margin-bottom: 30px;
+                    margin-right: 20px;
+                }
+    
+                textarea {
+                    padding: 10px 350px 10px 20px;
+                    border: none;
+                    width: 100%;
+                }
+    
+            }
+    
+            button {
+                width:  80%;
+                margin-top: 20px;
+                padding: 10px 0 10px 0;
+                background-color: black;
+                color: white;
+                transition: 0.3s ease-in-out;
+                border: none;
+    
+                &:hover {
+                    background-color: #ED6436;
+                }
+            }
+        }
+    }
+    
+    footer {
+        margin-top: 150px;
+        padding: 0 0px 20px 0px;
+        background-image: url(https://cdn.shopify.com/s/files/1/0016/2915/9471/files/bg-2.jpg?v=1626947531);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    
+        .footer-top {
+            padding-top: 100px;
+    
+            .footer-top-box {
+                .footer-top-left {
+                    border-right: 2px solid $color2;
+    
+                    h3 {
+                        color: $color2;
+                        font-size: 25px;
+                    }
+    
+                    p {
+                        color: $color1;
+                        padding-right: 30px;
+                        margin: 0;
+                        font-size: 14px;
+    
+                    }
+    
+                }
+    
+                .footer-top-right {
+                    .input-box {
+                        background-color: $color3;
+                        padding: 8px 15px 8px 30px;
+                        border-radius: 25px;
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+    
+                        input {
+                            background: transparent;
+                            border: none;
+                            outline: none;
+                            color: $color1;
+                            width: 100%;
+                        }
+    
+                        a {
+                            padding: 7px 30px;
+                            border-radius: 25px;
+                            background-color: $color2;
+    
+                            i {
+                                color: $color1;
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+    
+        }
+    
+        .footer-center {
+            margin-top: 50px;
+            margin-bottom: 50px;
+    
+            img {
+                margin-bottom: 15px;
+            }
+    
+            p {
+                color: $color4;
+                margin-bottom: 20px;
+    
+                a {
+                    text-decoration: none;
+                    color: $color2;
+                }
+            }
+    
+            .ul-left {
+                margin-bottom: 20px;
+    
+                li {
+                    margin-bottom: 15px;
+                    font-weight: bold;
+    
+                    i {
+                        color: $color2;
+                        font-size: 18px;
+                        margin-right: 10px;
+    
+                    }
+    
+                    span {
+                        color: $color1;
+                    }
+                }
+            }
+    
+            .icons {
+    
+                i {
+                    background-color: $color1;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 7px;
+                    display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    transition: 0.3s ease;
+                    cursor: pointer;
+    
+                    &:hover {
+                        background-color: $color2;
+                        color: $color1;
+                    }
+                }
+            }
+    
+            h4 {
+                color: $color1;
+                font-size: 18px;
+                margin: 22px 0;
+            }
+    
+            .ul-right {
+                li {
+                    margin-bottom: 7px;
+    
+                    a {
+                        text-decoration: none;
+                        color: $color4;
+                        font-size: 15px;
+                        transition: 0.3s ease;
+    
+                        &:hover {
+                            color: $color2;
+                        }
+                    }
+                }
+            }
+    
+    
+    
+        }
+    
+        .footer-bottom {
+            border-top: 1px solid $color3;
+            padding-top: 20px;
+    
+            span {
+                color: $color4;
+            }
+    
+            .bottom-img {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }
+    
+    
+    }
+    
+}
+
+@import "_mapr.scss";
+
